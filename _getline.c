@@ -1,8 +1,8 @@
 #include "header.h"
 /**
- * _getline - read input from standard input by user
- * Return: the input on a buffer
- */
+* _getline - read input from standard input by user
+* Return: the input on a buffer
+*/
 char *_getline()
 {
 	int i, rd, buffsize = BUFSIZE;
@@ -50,8 +50,9 @@ char *_getline()
 char *enter(char *string)
 {
 	free(string);
-	return("\0");
+	return ("\0");
 }
+
 /**
  * space - Modifies the input string to remove preceeding whitespaces
  * @str: Input to be modifies
