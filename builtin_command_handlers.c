@@ -4,7 +4,6 @@
  * @cmd: Parsed command to be check
  * Return: 0 Succes -1 Fail
  */
-
 int check_builtin(char **cmd)
 {
 	builtin fun[] = {
@@ -29,14 +28,12 @@ int check_builtin(char **cmd)
 	}
 	return (-1);
 }
-
 /**
  * handle_builtin - Handles predefined built in commands
  * @cmd: Array of parsed command strings
  * @st: Status of last execution
  * Return: -1 Failure 0 Success
  */
-
 int handle_builtin(char **cmd, int st)
 {
 	builtin built_in[] = {
@@ -59,7 +56,6 @@ int handle_builtin(char **cmd, int st)
 	}
 	return (-1);
 }
-
 /**
  * exit_bul - Exit Status for built-in commands
  * @cmd: Array of parsed command strings
@@ -68,7 +64,6 @@ int handle_builtin(char **cmd, int st)
  * @c: Shell execution count
  * @stat: Exit status
  */
-
 void exit_bul(char **cmd, char *input, char **argv, int c, int stat)
 {
 	int status, i = 0;
