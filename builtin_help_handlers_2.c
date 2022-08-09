@@ -8,7 +8,6 @@ void help_env(void)
 
 	write(STDOUT_FILENO, msg, _strlen(msg));
 }
-
 /**
  * help_setenv - Displays information on the shell by builtin command 'setenv'
  */
@@ -22,7 +21,6 @@ void help_setenv(void)
 	msg = "\tUpon failure, prints a message to stderr.\n";
 	write(STDOUT_FILENO, msg, _strlen(msg));
 }
-
 /**
  * help_unsetenv - Displays information on the shellby builtin command
  * 'unsetenv'
