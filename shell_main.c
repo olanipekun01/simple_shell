@@ -6,8 +6,7 @@
  * Return: Returns condition
  */
 int main(__attribute__((unused)) int argc, char **argv)
-{
-	char *input, **cmd, **commands;
+{	char *input, **cmd, **commands;
 	int count = 0, i, condition = 1, stat = 0;
 
 	if (argv[1] != NULL)
@@ -41,13 +40,6 @@ int main(__attribute__((unused)) int argc, char **argv)
 			{
 				stat = check_cmd(cmd, input, count, argv);
 			}
-			/*
-			 * if (commands[i + 1] == NULL)
-			 * {
-			 * free(commands);
-			 * break;
-			 * }
-			*/
 			free(cmd);
 		}
 		free(input);
