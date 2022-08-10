@@ -1,12 +1,10 @@
 #include "header.h"
-
 /**
  * main - Entry point to program
  * @argc: Argument count
  * @argv: Argument vector
  * Return: Returns condition
  */
-
 int main(__attribute__((unused)) int argc, char **argv)
 {
 	char *input, **cmd, **commands;
@@ -15,7 +13,6 @@ int main(__attribute__((unused)) int argc, char **argv)
 	if (argv[1] != NULL)
 		read_file(argv[1], argv);
 	signal(SIGINT, signal_to_handle);
-
 	while (condition)
 	{
 		count++;
@@ -44,11 +41,13 @@ int main(__attribute__((unused)) int argc, char **argv)
 			{
 				stat = check_cmd(cmd, input, count, argv);
 			}
-			/*if (commands[i + 1] == NULL)
-			{
-				free(commands);
-				break;
-			}*/
+			/*
+			 * if (commands[i + 1] == NULL)
+			 * {
+			 * free(commands);
+			 * break;
+			 * }
+			*/
 			free(cmd);
 		}
 		free(input);
